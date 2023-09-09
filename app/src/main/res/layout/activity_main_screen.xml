@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@drawable/main_screen_background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+    <Button
+        android:id="@+id/addVehicleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD FROM LIST"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_rounded"
+        app:backgroundTint="@color/khakhi"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+                <Button
+                    android:id="@+id/floatAddUnAddedVehicles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADD NEW"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_rounded"
+                    app:backgroundTint="@color/khakhi"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+            </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/finalRecyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
